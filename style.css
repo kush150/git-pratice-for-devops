@@ -1,0 +1,96 @@
+/* Global Styling */
+body {
+  font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  margin: 0;
+  background-color: #fff;
+  color: #3e2723; /* Dark brown */
+}
+
+header {
+  background-color: #6d4c41; /* Medium brown */
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+header p {
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+}
+
+/* Layout */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem;
+  justify-content: center;
+}
+
+form {
+  flex: 1;
+  min-width: 300px;
+  max-width: 500px;
+}
+
+.form-section {
+  margin-bottom: 1.5rem;
+}
+
+.form-section h2 {
+  font-size: 1.4rem;
+  color: #4e342e;
+  margin-bottom: 0.5rem;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 0.8rem;
+  margin: 0.5rem 0;
+  border: 1px solid #d7ccc8;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+
+textarea {
+  resize: none;
+}
+
+/* Button */
+.btn {
+  background-color: #6d4c41;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 12px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #5d4037;
+}
+
+/* CV Preview */
+.cv-preview {
+  flex: 1;
+  min-width: 300px;
+  max-width: 500px;
+  background: #fbe9e7;
+  border-radius: 15px;
+  padding: 1.5rem;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.cv-preview h2 {
+  margin-top: 0;
+  color: #3e2723;
+}

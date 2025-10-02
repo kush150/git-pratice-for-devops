@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CV Builder</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <h1>CV Builder</h1>
+    <p>Create your professional CV in minutes</p>
+  </header>
+
+  <main class="container">
+    <form id="cvForm">
+      <section class="form-section">
+        <h2>Personal Information</h2>
+        <input type="text" placeholder="Full Name" required />
+        <input type="email" placeholder="Email Address" required />
+        <input type="tel" placeholder="Phone Number" required />
+        <input type="text" placeholder="Address" />
+      </section>
+
+      <section class="form-section">
+        <h2>Education</h2>
+        <textarea placeholder="Enter your education details" rows="3"></textarea>
+      </section>
+
+      <section class="form-section">
+        <h2>Experience</h2>
+        <textarea placeholder="Enter your work experience" rows="3"></textarea>
+      </section>
+
+      <section class="form-section">
+        <h2>Skills</h2>
+        <input type="text" placeholder="E.g. JavaScript, React, AWS" />
+      </section>
+
+      <button type="submit" class="btn">Generate CV</button>
+    </form>
+
+    <div class="cv-preview" id="cvPreview">
+      <h2>CV Preview</h2>
+      <div id="previewContent"></div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
